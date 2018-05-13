@@ -98,7 +98,7 @@
                 <div>
                     <p>Ingles</p>
                     <div class="progress mr-4 progress-father-color">
-                        <div class="progress-bar progress-child-color" role="progressbar" style="width: 80%;"></div>
+                        <div class="progress-bar progress-child-color" role="progressbar" style="width: 70%;"></div>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                 <h3 class="title">Ingeniería en Sistemas Computacionales</h3>
                 <h5>Unitec</h5>
                 <p>
-                    Obtuve todos los conocimientos para el desarrollo de sofware y como administrarlo.
+                    Actualmente cursandolo en la Universidad Tecnológica de Honduras
                 </p>
             </div>
             <br>
@@ -191,34 +191,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script>
-        function size(){
-            let body = document.getElementById('body')
-            let title = document.getElementById('title')
-            let img = document.getElementById('container-img')
-            let name = document.getElementById('title-img')
-            if (body.clientWidth < 992){
-                title.style.display = 'none'
-                name.style.display = 'block'
-                img.appendChild(name);
-            }else {
-                title.style.display = 'block'
-                name.style.display = 'none'
-            }
-        }
-        
-        function counter(){
-            if(typeof(Storage) !== "undefined") {
-                if (localStorage.load) {
-                    localStorage.load = Number(localStorage.load)+1
-                } else {
-                    localStorage.load = 1
-                }
-                document.getElementById("result").innerHTML = "Tu has visitado " + localStorage.load + " veces esta página."
-            } else {
-                document.getElementById("result").innerHTML = "Lo siento, tu navegador no tiene soporte para web storage."
-            }
-        }
-    </script>
 </body>
 </html>
